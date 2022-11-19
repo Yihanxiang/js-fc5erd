@@ -1,0 +1,52 @@
+<h1> TRABAJO PRÁCTICO</h1>
+
+Autor: Yihan Xiang <br>
+Url: <a href="https://js-fc5erd.stackblitz.io">https://js-fc5erd.stackblitz.io</a><br>
+GitHub :<a href="https://github.com/Yihanxiang/yihan" >https://github.com/Yihanxiang/yihan</a><br>
+<br>Fuente de dato 1:<a href="https://drivendata-prod.s3.amazonaws.com/data/44/public/dengue_features_train.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARVBOBDCYQTZTLQOS%2F20221119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221119T000947Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b0f5db4db867967b0071187a0335736a3ca2532faf466d97303cbb1be3318254" >https://drivendata-prod.s3.amazonaws.com/data/44/public/dengue_features_train.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARVBOBDCYQTZTLQOS%2F20221119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221119T000947Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b0f5db4db867967b0071187a0335736a3ca2532faf466d97303cbb1be3318254</a><br>
+
+<br>Fuente de dato 2:<a href="https://drivendata-prod.s3.amazonaws.com/data/44/public/dengue_labels_train.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARVBOBDCYQTZTLQOS%2F20221119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221119T000947Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=aab959ff68433ceccb34f0b23e21be20397918592054fcf020905c6729377996">https://drivendata-prod.s3.amazonaws.com/data/44/public/dengue_labels_train.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARVBOBDCYQTZTLQOS%2F20221119%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221119T000947Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=aab959ff68433ceccb34f0b23e21be20397918592054fcf020905c6729377996</a><br>
+
+<h1>1.Introducción</h1>
+
+En el presente trabajo se va a utilizar una base de datos previamente estudiado en la actividad 2 de la asignatura de Machine Learning, para continuar explorándolo y finalmente sacar una predicción.<br>
+
+<h1>2.Audiencia</h1>
+Esta presentación va dirigido a todas las personas de la salud pública y las personas de todo el mundo para que, tras el estudio, poder tomar medidas reduciendo el impacto de las epidemias, en concreto, de la epidemia Dengue.
+
+<h1>3.Objetivo</h1>
+
+El dengue es una infección vírica transmitida a los humanos por la picadura de mosquitos infectados.
+El objetivo de esta presentación consiste en mostrar, a través de distintas visualizaciones, cómo afectan los distintos parámetros en la producción de la epidemia Dengue y a partir de ello, tomar las medidas oportunas.<br>
+
+<h1>4.Google Sheet</h1>
+La primera herramienta que se va a utlilizar para crear visualizaciones gráficas es Google Sheet, la razón por la cual se ha eligido es porque es la primera herramienta que se ha enseñado a utilizar durante las actividades guiadas y presenta una serie de ventajas. Es muy fácil de usar, nos permite compartir en tiempo real, buen catálogo de tipos de gráficos además de que es completamente gratuito.<br>
+
+<br>
+<h2>Gráfico 1</h2>
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkRGWZ62Dy28rdB51MeXcCFYRh60-z8gJr27o4SVAAfT-T6RwMfzF2mkc3mboM68qediFSKIWbIK_L/pubchart?oid=1835048753&amp;format=interactive"></iframe>
+
+<h4>Se ha representado la variable 'Año' y 'Casos totales de infección' mediante una diagrama de barras porque es el tipo de diagrama que permite ver claramente la relación entre estas dos variables. En la gráfica podemos observar que el año en el que hubo mayor número de casos es en el año 1995. Además, con el paso de tiempo se  van reduciendo los casos.
+
+<h2>Gráfica 2</h2>
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSkRGWZ62Dy28rdB51MeXcCFYRh60-z8gJr27o4SVAAfT-T6RwMfzF2mkc3mboM68qediFSKIWbIK_L/pubchart?oid=1154926727&amp;format=interactive"></iframe>
+
+<h4>Se ha representado la variable 'Precipitación' y 'Casos totales de infección' mediante una diagrama de dispersión porque este diagrama muestra claramente cómo va disminuyendo el número de casos con el aumento de la precipitación. En la gráfica podemos observar que cuando mayor es la precipitación, menos casos de infección por la epidemia hay.</h4>
+
+Enlace a google sheet :<a href="https://docs.google.com/spreadsheets/d/1-IB3WHCO8VdozNeoHX9w7iH1a9IVSb7oFIHAjfndR1Q/edit?usp=sharing">https://docs.google.com/spreadsheets/d/1-IB3WHCO8VdozNeoHX9w7iH1a9IVSb7oFIHAjfndR1Q/edit?usp=sharing </a><br>
+
+
+<h1>4.DataWrapper</h1>
+La segunda herramienta utilizado para hacer crear visualizaciones gráficas es DataWrapper, la razón es porque es una herramienta muy fácil e intuitivo, me ha gustado mucho cuando lo he conocido. Al igual que Google Sheet, también es gratuito y no hace falta instalación. Otra razón por la que se ha decidido por esta herramienta es la gran variedad de gráfica que permite obtener y el amplio formato al que se puede aplicar a la gráfica <br>
+
+
+<h2>Gráfica 3</h2>
+<iframe title="[ Temperatura media(K) vs Casos totales ]" aria-label="Scatter Plot" id="datawrapper-chart-6yQTB" src="https://datawrapper.dwcdn.net/6yQTB/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="500" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+<h1>5.Google Colaboratory</h1>
+
+Por último, se va a trabajar con google colaboratory porque esta herramienta ya lo había trabajado en otras asignaturas, además de que cuenta con una integración de multitud de herramientas, puede trabajar con datos que provienen de diversas fuentes. <br>
+
+<br>Google Colaboratory:<a href="https://colab.research.google.com/drive/1P1LEp0qLgTecuiLFb-Axj6Ja_PQEti1m?usp=sharing" >https://colab.research.google.com/drive/1P1LEp0qLgTecuiLFb-Axj6Ja_PQEti1m?usp=sharing</a>
